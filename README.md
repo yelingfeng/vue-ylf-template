@@ -2,44 +2,43 @@
 
 vue 2.0 template
 
-## ÕûºÏ¼¼ÊõÕ»
+## æ•´åˆæŠ€æœ¯æ ˆ
 
 - [x] vue@2.0.0-rc.4
 - [x] vue-resource@1.0.0
 - [x] vuex@2.0.0-rc.4
-- [x] bootstrap@3.x
-- [x] jquery@2.x
-- [x] echarts@3.x
-- [x] lodash@4.x
+- [x] bootstrap
+- [x] jquery
+- [x] echarts
+- [x] lodash
 - [x] foundation-datepicker@1.5.3
-- [x] moment@2.14
-- [x] webpack@2.1-beta
+- [x] moment
+- [x] webpack
 
-## ÏîÄ¿Ä¿Â¼
+## ç›®å½•ç»“æ„
 
 ````javascript
 
-©À©¤build
-©À©¤config
-©¸©¤src
-    ©À©¤api
-    ©À©¤assets
-    ©¦  ©À©¤css
-    ©¦  ©À©¤images
-    ©¦  ©¸©¤lib
-    ©¦      ©À©¤easyui
-    ©¦      ©¦  ©À©¤css
-    ©¦      ©¦  ©À©¤images
-    ©¦      ©¦  ©¦  ©¸©¤icons
-    ©¦      ©¦  ©¸©¤js
-    ©¦      ©¸©¤layer_mobile
-    ©¦          ©¸©¤need
-    ©À©¤components
-    ©¦  ©À©¤Pie
-    ©¦  ©¦  ©¸©¤sub
-    ©¦  ©¸©¤util
-    ©À©¤store
-    ©¸©¤views
+â”œâ”€build
+â”œâ”€config
+â””â”€src
+    â”œâ”€api
+    â”œâ”€assets
+    â”‚  â”œâ”€css
+    â”‚  â”œâ”€images
+    â”‚  â””â”€lib
+    â”‚      â”œâ”€easyui
+    â”‚      â”‚  â”œâ”€css
+    â”‚      â”‚  â”œâ”€images
+    â”‚      â”‚  â”‚  â””â”€icons
+    â”‚      â”‚  â””â”€js
+    â”‚      â””â”€layer_mobile
+    â”‚          â””â”€need
+    â”œâ”€components
+    â”‚  â”œâ”€Pie
+    â”‚  â”‚  â””â”€sub
+    â”‚  â””â”€util
+    â”œâ”€store
+    â””â”€views
 
 ```
-
