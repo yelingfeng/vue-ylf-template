@@ -128,7 +128,7 @@ export default class ChartClass {
         let xAxis = [];
         let group = [];
         let series = [];
-        let emptyData = {category: [], xAxis: [],series:[]};
+        let emptyData = {"category": [], "xAxis": [],"series":[]};
         let chainsData = lodash.chain(data) ;
         if(data == null || (data.length== 1 && data[0].name == "" )){
             return emptyData;
