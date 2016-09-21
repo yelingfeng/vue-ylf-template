@@ -1,0 +1,133 @@
+/*
+**common table
+**data on 10/20/2015
+*/
+body{
+	/*background: none;*/
+}
+.panel-header, .panel-body {
+    border-color:#537DAD;
+}
+.panel-body {
+    background-color: transparent;/* #ffffff*/
+    color: rgba(210,165,123,.9);/*#000000*/
+}
+.datagrid-view {
+    background-color: rgba(13,59,110,.4);
+}
+.panel-body-noheader{
+	  border-top-width: 0px; 
+}
+.datagrid-htable, .datagrid-btable, .datagrid-ftable {
+   color:#fff;
+}
+.datagrid-view1 .datagrid-btable{
+	width: 100%;  
+}
+.datagrid-view2 .datagrid-btable,.datagrid-view2 .datagrid-htable{
+	color:#e5e5e5;
+	width:100%;
+}
+.datagrid-htable .datagrid-header-row,
+.datagrid-btable .datagrid-header-row,
+.datagrid-ftable .datagrid-header-row {
+    color: rgba(153,196,27,.9);
+}
+.datagrid-header td{
+    border-top: 1px solid #4297d7; 
+    border-bottom: 1px solid #4297d7; 
+    padding: 3px 0;
+}
+ .datagrid-body td {
+    vertical-align: top;
+    border-bottom: solid 1px #4573A0;
+    padding:3px 0;
+}
+.datagrid-body .datagrid-cell{
+	line-height:20px;
+}
+.datagrid-footer td{
+	border-width: 0px;
+}
+
+.datagrid-header-row .datagrid-cell-check{
+	padding-top:5px;
+}
+.datagrid-header, .datagrid-td-rownumber {
+    background-color: rgba(210,165,123,.4);
+    background: -webkit-linear-gradient(top,#104988 0,#0d3c73 100%);
+    background: -moz-linear-gradient(top,#104988 0,#0d3c73 100%);
+    background: -o-linear-gradient(top,#104988 0,#0d3c73 100%);
+    background: linear-gradient(to bottom,#104988 0,#0d3c73 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#104988,endColorstr=#0d3c73,GradientType=0);
+}
+.datagrid-td-rownumber {
+    background:none;
+}
+.datagrid-header, .datagrid-toolbar, .datagrid-pager, .datagrid-footer-inner {
+    border-color: none;
+}
+.datagrid-row-over{
+  background: #184e83; 
+  font-weight: normal;  
+}
+.datagrid-row-over .datagrid-cell-rownumber{
+	/* color:#1d5987; */ 
+}
+.datagrid-sort-desc .datagrid-sort-icon {
+   /* padding: 0 20px 0 0;
+    background: url('../images/datagrid_icons.png') no-repeat -16px center;*/
+}
+.datagrid-sort-asc .datagrid-sort-icon {
+   /* padding: 0 18px 0 0;
+    background: url('../images/datagrid_icons.png') no-repeat 0px center;*/
+}
+/*pagination*/
+.datagrid-pager {
+    background: none;
+    color: rgba(255,255,255,1);
+}
+.datagrid .datagrid-pager{
+	background-color: rgba(13,59,110,.4);
+}
+.pagination-page-list, .pagination .pagination-num {
+    border-color: #2D558A;
+    background: rgba(12,59,111,.1);
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.pagination-page-list option{
+	background: rgba(12,59,111,.9);
+}
+.pagination-page-list option:hover{
+	background: rgba(12,59,111,.9);
+}
+.l-btn-plain:hover {
+  background: none;
+  color: #000000;
+  border: 1px solid #b7d2ff;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.pagination-btn-separator {
+    height: 18px;
+    border-left: 1px solid #ccc;
+    border-right: 0px solid #fff;
+}
+.panel-header{
+	background:none;
+	border:none;
+	border-bottom:1px solid #fff;
+}
+.panel-header .title_green{
+	color:#51d60a;
+	
+}
+.datagrid-header-row:first-child .datagrid-cell-group{
+	font-size:16px;
+	font-weight:bold;
+}

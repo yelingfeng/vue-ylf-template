@@ -1,0 +1,17 @@
+@charset "utf-8";
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,address,cite,code,del,em,img,strong,sub,sup,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+img,object,embed{max-width:100%}
+mark{background-color:#ff9;color:#000;font-style:normal;font-weight:400}
+del{text-decoration:line-through}
+caption,cite,em,i,th{font-style:normal;font-weight:400}b,strong{font-style:normal;font-weight:700}
+select,input,button,textarea{font-size:100%;font-style:normal;font-weight:400;vertical-align:middle;-webkit-border-radius:0;-webkit-appearance: none;}
+table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}legend{color:#000}sup{vertical-align:text-top}sub{vertical-align:text-bottom}iframe{display:block}li{list-style:none}textarea{resize:none}
+div,th,td{word-wrap:break-word;word-break:break-all}
+body,button,input,select,textarea{font:14px/1.5 Arial,Helvetica,sans-serif}
+body{-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a{text-decoration:none}
+:focus{outline:none}
+.al{text-align:left}.ac{text-align:center}.ar{text-align:right}
+.fl{float:left}.fr{float:right}.ti{text-indent:-9999px;overflow:hidden}
+.hide{display:none}
