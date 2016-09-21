@@ -1,5 +1,5 @@
 {
-    "prompts":{
+    "prompts": {
         "name": {
             "type": "string",
             "required": true,

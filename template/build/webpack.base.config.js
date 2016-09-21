@@ -2,12 +2,13 @@
  * Created by yelingfeng on 2016/9/12.
  */
 var path = require('path')
-var config = require('../config')
+var config = require('../config/index')
+var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
     entry: {
-        vendor: config.venders,
+        vendor: config.build.venders,
         app: './src/main'
     },
     output: {
@@ -16,22 +17,26 @@ module.exports = {
         filename: '[hash:8].[name].js',
     },
     resolve: {
-        extensions: ['', '.js', '.vue'],
+        extensions: ['.js', '.vue'],
         alias:   {
-            src: path.resolve(__dirname, './src'),
-            assets: path.resolve(__dirname, './src/assets'),
-            components: path.resolve(__dirname, './src/components'),
-            views: path.resolve(__dirname, './src/views'),
+            src: path.resolve(__dirname, '../src'),
+            assets: path.resolve(__dirname, '../src/assets'),
+            components: path.resolve(__dirname, '../src/components'),
+            views: path.resolve(__dirname, '../src/views'),
         }
-    },
-    resolveLoader: {
-        fallback: [path.join(__dirname, '../node_modules')]
     },
     module: {
         loaders: [
             {
                 test: /\.vue$/,
+                include: projectRoot,
                 loader: 'vue'
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel',
+                include: projectRoot,
+                exclude: /node_modules/
             },
             {
                 test: /\.json$/,
@@ -54,9 +59,6 @@ module.exports = {
                 }
             }
         ]
-    },
-    vue: {
-        loaders: utils.cssLoaders()
     },
     devServer: {
         historyApiFallback: true,

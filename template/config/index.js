@@ -17,9 +17,6 @@ module.exports = {
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-        productionSourceMap: true,
-        productionGzip: false,
-        productionGzipExtensions: ['js', 'css'],
         venders :venderPlugin
     },
     dev: {
@@ -28,6 +25,7 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {},
-        venders :venderPlugin
+        venders :venderPlugin,
+        cssSourceMap: false
     }
 }

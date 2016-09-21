@@ -9,12 +9,12 @@ export default  {
         pieData:Array,
         pieStyle:Object
     },
-    computed: {
+    computed:{
         pieStyle(){
             if(this.pieObj){
                 this.pieObj.resize()
             }
-            return this.$store.getters.getPieSize;
+            return this.$store.getters.getPieSize
         }
     },
     watch:{
@@ -31,7 +31,7 @@ export default  {
     mounted(){
         this.pieObj = new Pie({
             el : this.$el,
-            sub: 'base',
+            sub: 'base'
         });
     }
 }

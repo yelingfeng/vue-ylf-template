@@ -9,7 +9,6 @@ Vue.use(Vuex)
 const isProd = process.env.NODE_ENV === 'production'
 const plugins = isProd ? [] : [createLogger];
 
-
 const store = new Vuex.Store({
     plugins: plugins,
     state: {
@@ -18,17 +17,24 @@ const store = new Vuex.Store({
     },
     actions: {
         INIT_RESOURCE:({commit , dispatch,state}) => {
+            let param = {
+                name : "yelingfeng",
+                age : "18"
+            }
             API.getCircleData(param).then((resp)=>{
                 commit('INIT_PIE',resp.data.result)
+            },(resp)=>{
+                layer.open(resp)
             })
+
         },
         RESIZE_PIE:({commit,state},{size}) =>{
             commit('RESIZE_PIE',{size})
         }
     },
     mutations: {
-        INIT_PIE:(state , d) =>{
-            state.pieData = d ;
+        INIT_PIE:(state , data) => {
+            state.pieData = data ;
         },
         RESIZE_PIE:(state , { size })=> {
             state.pieStyle = size ;
@@ -38,7 +44,7 @@ const store = new Vuex.Store({
         getPieData(state){
             return state.pieData
         },
-        getPieStyle(state){
+        getPieSize(state){
             return state.pieStyle
         }
     }

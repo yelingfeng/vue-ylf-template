@@ -4,9 +4,9 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --port=8100 --config build/webpack.dev.config.js",
-    "build": "rimraf static && cross-env NODE_ENV=production webpack  --progress --hide-modules --config build/webpack.prod.config.js",
-    "apiServer" : "node server.js"
+    "dev": "webpack-dev-server --inline --hot --port=8100 --config ./build/webpack.dev.config.js",
+    "build": "rimraf static && cross-env NODE_ENV=production webpack  --progress --hide-modules --config ./build/webpack.prod.config.js",
+    "api-server" : "node server.js"
   },
   "dependencies": {
     "echarts": "^3.2.2",
@@ -19,8 +19,8 @@
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
-    "babel-plugin-transform-runtime": "^6.12.0",
     "babel-polyfill": "^6.13.0",
+    "babel-plugin-transform-runtime": "^6.12.0",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-0": "^6.5.0",
     "babel-runtime": "^6.11.6",
@@ -30,7 +30,6 @@
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^2.0.0-beta.3",
     "file-loader": "^0.8.4",
-    "happypack": "^2.2.1",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
@@ -40,8 +39,6 @@
     "vue-loader": "^9.2.2",
     "vue-resource": "^1.0.0",
     "vue-style-loader":"^1.0.0",
-    "vue-hot-reload-api": "^1.2.0",
-    "vue-html-loader": "^1.0.0",
     "vuex": "^2.0.0-rc.4",
     "webpack": "^2.1.0-beta.21",
     "webpack-dev-server": "^2.1.0-beta.0",
