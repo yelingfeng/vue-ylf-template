@@ -13,7 +13,7 @@ vue 2.0 template
 - [x] lodash
 - [x] foundation-datepicker@1.5.3
 - [x] moment
-- [x] webpack@2.1-beta
+- [x] webpack
 
 ## 目录结构
 
