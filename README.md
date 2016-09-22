@@ -1,6 +1,6 @@
 # vue-ylf-template
 
- 一套偏后端的混合vue模板
+ 一套偏后端的混合vue模板 整合了大量插件  
 
 ## 整合技术栈
 
@@ -10,6 +10,7 @@
 - [x] bootstrap
 - [x] jquery
 - [x] echarts
+- [x] layer
 - [x] lodash
 - [x] foundation-datepicker@1.5.3
 - [x] moment
