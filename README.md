@@ -1,6 +1,6 @@
 # vue-ylf-template
 
-vue 2.0 template
+ 一套偏后端的混合vue模板
 
 ## 整合技术栈
 
