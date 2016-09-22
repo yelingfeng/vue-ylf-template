@@ -9,7 +9,6 @@ import _ from "lodash"
 /**
  * 获取label样式
  * @param op
- * @returns {{textStyle: {color: string, fontFamily: string}}}
  */
 export function getAxisLabel(op, isRotate = false) {
     let obj = {

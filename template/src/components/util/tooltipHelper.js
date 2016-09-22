@@ -5,7 +5,6 @@ import _ from "lodash"
 
 import {getSpecialProps} from "../propsUtil"
 
-
 // tip 通用格式
 export function getTooltip(config, props) {
 

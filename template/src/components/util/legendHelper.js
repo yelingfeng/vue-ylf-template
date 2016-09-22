@@ -7,14 +7,14 @@ import * as config from "../commonConfig"
 
 /**
  * 位置属性常量
- * @type {{
+ * @type {
  * L_T: string,
  * C_T: string,
  * R_T: string,
  * C_B: string,
  * R_C: string,
  * B_C: string
- * }}
+ * }
  */
 const LEGENDALIGN = {
     L_T: "1",
@@ -29,7 +29,6 @@ const LEGENDALIGN = {
  * 图例设置
  * @param data
  * @param props
- * @returns {*}
  */
 export function getLegend(data, props) {
     let legend = {
