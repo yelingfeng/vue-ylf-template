@@ -15,6 +15,47 @@ vue 2.0 template
 - [x] moment
 - [x] webpack
 
+
+## How to use 
+
+fisrt install  vue-cli 
+
+```nodejs
+  
+   $ npm install vue-cli -g 
+  
+```
+
+init vue-ylf-template
+
+```nodejs
+  
+   $ vue init yelingfeng/vue-ylf-template {projectName}
+   $ cd {projectName}
+   
+```
+install
+```nodejs
+   $ npm install      
+
+```
+
+dev
+```nodejs 
+
+    // 启动api-server
+   $ npm run api-server
+   
+    // 启动开发模式
+   $ npm run dev
+   
+```
+
+build
+```nodejs 
+   $ npm run build 
+```
+
 ## 目录结构
 
 ````javascript
