@@ -10,19 +10,21 @@ var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
     module: {
-        loaders: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })
+        loaders: [
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    loader: 'css-loader?sourceMap'
+                })
+            }
+        ]
     },
     devtool: config.build.productionSourceMap ? '#source-map' : false,
     output: {
         path: config.build.assetsRoot,
         filename: utils.assetsPath('js/[name].[hash].js'),
         chunkFilename: utils.assetsPath('js/[id].[hash].js')
-    },
-    vue: {
-        loaders: utils.cssLoaders({
-            sourceMap: config.build.productionSourceMap,
-            extract: true
-        })
     },
     plugins: [
         new webpack.DefinePlugin({
