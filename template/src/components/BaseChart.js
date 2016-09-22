@@ -118,7 +118,7 @@ export default class ChartClass {
     /**
      * 分组data 处理方法
      * @param data
-     * @returns {{category: Array, xAxis: Array, series: Array}}
+     * @returns {category: Array, xAxis: Array, series: Array}
      */
     groupData(){
         let me = this;
@@ -254,7 +254,7 @@ export default class ChartClass {
      *
      * @param seriesObj groupData处理后的数据
      * @param props  属性对象
-     * @returns {{color: string[], tooltip: *, grid: *, xAxis: *[], yAxis: *[], series: *}}
+     * @returns {color: string[], tooltip: *, grid: *, xAxis: *[], yAxis: *[], series: *}
      */
     axisChartSetting(seriesObj, props) {
         let tooltips = getTooltip({trigger: "axis"}, props)

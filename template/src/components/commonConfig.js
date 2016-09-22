@@ -37,16 +37,11 @@ export const axisLineColor = "#1086c4";
 /**
  * 通用颜色集合
  */
-export const commonColorList =
-    //['#47c9f6' ,  '#34b2aa' ,'#34b269' , '#b1ac34'  ,'#f4794f' ,  '#b54339' , '#2c5ba3',   '#414079'];
-['#47c9f6'  , '#287196',  '#1e6a6f',  '#1f7349',  '#f4794f' ,   '#b54339',  '#2c5ba3'  , '#414079'];
-
-
+export const commonColorList =['#47c9f6'  , '#287196',  '#1e6a6f',  '#1f7349',  '#f4794f' ,   '#b54339',  '#2c5ba3'  , '#414079'];
 
 
 /**
- * 地图颜色#5aaecc  #438199  #22414d
- * @type {string[]}
+ * 地图颜色
  */
 export const mapRangeColorList = [ '#bb1e1e','#db4646'  ,'#f4794f' ,'#f5b24e'  ];
 
