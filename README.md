@@ -1,6 +1,6 @@
 # vue-ylf-template
 
- 一套偏后端的混合vue模板 整合了大量插件  
+ 一套偏PC端的混合vue2.0模板 抽取<code>vue-cli</code> webpack完整版 去掉<code>eslint</code>, <code>test</code> 去其精华 取其糠糟
 
 ## 整合技术栈
 
