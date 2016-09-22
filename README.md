@@ -13,7 +13,7 @@ vue 2.0 template
 - [x] lodash
 - [x] foundation-datepicker@1.5.3
 - [x] moment
-- [x] webpack
+- [x] easyui
 
 
 ## How to use 
