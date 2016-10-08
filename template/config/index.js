@@ -2,13 +2,8 @@
  * Created by yelingfeng on 2016/9/12.
  */
 var path = require('path')
-
-var venderPlugin = [
-    'vue','vuex','lodash','echarts','vue-resource',
-    'bootstrap','jquery','moment',
-    'assets/lib/easyui/js/jquery.easyui.min',
-    'assets/lib/easyui/js/easyuizhCN'
-]
+const pkg = require('../package')
+const venderPlugin = Object.keys(pkg.dependencies)
 
 module.exports = {
     build: {
@@ -22,6 +17,7 @@ module.exports = {
     dev: {
         env: require('./dev.env'),
         port: 8100,
+        apiPort : 8400,
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {},

@@ -4,7 +4,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import API from "../api"
-import createLogger from 'vuex/logger'
+import createLogger from 'vuex/dist/logger'
 Vue.use(Vuex)
 const isProd = process.env.NODE_ENV === 'production'
 const plugins = isProd ? [] : [createLogger];

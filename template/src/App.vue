@@ -1,42 +1,13 @@
 <template>
-  <div id="app" :style="centerStyle">
-      <nav class="navbar navbar-default navbar-static-top">
-          <div class="container-fluid">
-              <div id="navbar-collapse" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav navbar-left">
-                      <div id="nav-container">
-                          <h4 title="vue2.0 template">
-                              vue2.0 template
-                          </h4>
-                        </div>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a href="https://github.com/yelingfeng">by yelingfeng</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <pie-comp :pie-data="pieData"></pie-comp>
-            </div>
-        </div>
-    </div>
-  </div>
+    <pie-comp :pie-data="pieData"></pie-comp>
 </template>
-
 <script>
 import pieComp from "views/pieView"
 export default {
       name : "app",
       data(){
           return  {
-              "centerStyle":{
 
-              }
           }
       },
      methods:{
@@ -46,9 +17,6 @@ export default {
 
             let piew = ( ww * 0.9  ) - 10;
             let pieh = ( wh  - 50 );
-
-            this.centerStyle.width = ww +"px";
-            this.centerStyle.height = wh +"px";
 
             this.$store.dispatch('RESIZE_PIE',{
                 size:{
@@ -73,7 +41,6 @@ export default {
       $(window).resize(() => {
           this.resizeWin()
       })
-
     },
     components :{
        pieComp
@@ -93,37 +60,6 @@ body {
 
 #app{
     position: relative;
-}
-
-.navbar.navbar-default {
-    margin-bottom: 0;
-    border: none;
-    background-color: #293c55;
-}
-.navbar.navbar-default .navbar-nav >li> a {
-    height: 50px;
-    color: #efefef;
-    padding: 15px 10px;
-}
-.navbar.navbar-default .navbar-nav>li>a:hover, .navbar.navbar-default .navbar-nav>li>a:focus {
-    color: #f3f3f3;
-    background-color: #0e151f;
-}
-
-#nav-container {
-    position: absolute;
-    left: 50px;
-    right: 60px;
-}
-#nav-container h4 {
-    color: #fff;
-    font-family: "Arial";
-    text-align: left;
-    float: left;
-    height: 30px;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px
 }
 
 

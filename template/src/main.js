@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import store from "./store"
-import path from "path"
 import $ from "jquery"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./assets/css/reset.css"
 import "./assets/lib/layer_mobile/need/layer.css"
 import "./assets/lib/layer_mobile/layer"

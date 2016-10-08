@@ -1,20 +1,21 @@
 {
   "name": "{{ name }}",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --port=8100 --config ./build/webpack.dev.config.js",
     "build": "rimraf static && cross-env NODE_ENV=production webpack  --progress --hide-modules --config ./build/webpack.prod.config.js",
-    "api-server" : "node server.js"
+    "api-server": "node server.js"
   },
   "dependencies": {
-    "echarts": "^3.2.2",
-    "font-awesome": "^4.6.3",
-    "foundation-datepicker": "^1.5.3",
+    "echarts": "^3.2.3",
     "jquery": "^2.2.4",
     "lodash": "^4.15.0",
-    "moment": "^2.14.1"
+    "moment": "^2.14.1",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "vuex": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
@@ -30,18 +31,17 @@
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^2.0.0-beta.3",
     "file-loader": "^0.8.4",
+    "font-awesome": "^4.6.3",
+    "foundation-datepicker": "^1.5.3",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
     "uglify-js": "^2.7.1",
     "url-loader": "^0.5.7",
-    "vue": "^2.0.0-rc.4",
-    "vue-loader": "^9.2.2",
-    "vue-resource": "^1.0.0",
-    "vue-style-loader":"^1.0.0",
-    "vuex": "^2.0.0-rc.4",
+    "vue-loader": "^9.5.0",
+    "vue-style-loader": "^1.0.0",
     "webpack": "^2.1.0-beta.21",
     "webpack-dev-server": "^2.1.0-beta.0",
-    "webpack-merge":"^0.8.3"
+    "webpack-merge": "^0.8.3"
   }
 }
